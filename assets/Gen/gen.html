@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <title>Générateur</title>
+    <link rel="icon" href="../img/poopulaire-icone.ico" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top ">
+            <a class="navbar-brand">
+                Poopulaire
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav  w-100">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../../index.html" id="accueil">Accueil</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav  w-100">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../Actu/actualité.html" id="actu">Actualité</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav  w-100">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#" id="generator" tabindex="-1" aria-disabled="true">Générateur</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <section id="page">
+        <h1>Le générateur</h1>
+        <p class="text-center">La flemme, c'est comme un lit, on ne veut pas y entrer quand on fait quelque
+            chose qui
+            nous tient à coeur
+            mais une fois dedans, c'est finis, on veut y rester parce que dehors, il fait froid !</p>
+
+        <h2>Entrez les informations demandées ici</h2>
+        <input type="text" id="name" placeholder="Nom du poopeur" />
+        <input type="text" id="titre" placeholder="Titre de la YTP" />
+        <input type="text" id="link" placeholder="Lien de votre chaîne" />
+        <input type="submit" id="gen" value="C'est partit !" />
+
+
+        <h2>La description et le titre sont générés ici</h2>
+        <input type="text" id="titre_generator" placeholder="Le futur titre" />
+
+        <textarea id="desc_generator" class="generator" placeholder="La future description"></textarea>
+    </section>
+
+
+    <footer>
+        <nav class="navbar fixed-bottom ">
+            <button type="button" class="btn ">La chaîne YouTube</button>
+            <button type="button" class="btn ">Le Twitter</button>
+        </nav>
+    </footer>
+    <script src="../js/actu.js"></script>
+    <script src="générateur.js"></script>
+
+</body>
